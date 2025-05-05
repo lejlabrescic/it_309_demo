@@ -1,4 +1,7 @@
 {
+    "name": "lejlabrescic/it_309_demo", 
+    "description": "A lightweight task manager powered by FlightPHP", 
+    "license": "MIT", 
     "require": {
       "mikecao/flight": "^1.3"
     },

@@ -32,6 +32,5 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    # Run tests without using phpunit.xml
     - name: Run PHPUnit tests
       run: vendor/bin/phpunit --testdox test/TaskTest.php

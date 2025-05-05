@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7690637e82c8668860fe981a567d357b",
+    "content-hash": "2d5322098f2f48f9a714e4be38adb9aa",
     "packages": [
         {
             "name": "mikecao/flight",

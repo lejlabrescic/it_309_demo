@@ -9,13 +9,16 @@ class TaskTest extends TestCase
         $this->assertTrue(true);
     }
 
+    // Check if the index page loads with the expected content
     public function testIndexPageLoads()
     {
+        // Simulate a GET request to the root of the app
         $_SERVER['REQUEST_METHOD'] = 'GET';
         $_SERVER['REQUEST_URI'] = '/';
 
+        // Capture the output of index.php (correct path)
         ob_start();
-        require __DIR__ . '/../public/views/index.php';
+        require __DIR__ . '/../public/index.php';  // Ensure this path is correct
         $output = ob_get_clean();
 
         // Check if specific content from the HTML is present

@@ -4,15 +4,67 @@
   <meta charset="UTF-8">
   <title>FlightPHP Task App</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; background: #f4f4f4; }
-    .container { background: white; padding: 1rem; max-width: 600px; margin: auto; border-radius: 8px; }
-    h1 { text-align: center; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #eef2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 2rem;
+      max-width: 700px;
+      margin: 4rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .info-box {
+      background: #f0f8ff;
+      border-left: 4px solid #007BFF;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Task Manager - FlightPHP</h1>
-    <p>This is a placeholder page. Hook this up with database logic and routes in `index.php`.</p>
-  </div>
+    <h1>📝 Task Manager - FlightPHP</h1>
+    <p>This is your lightweight task manager powered by FlightPHP.</p>
+
+    <div class="info-box">
+      <h3>🔗 How to Use the API</h3>
+      <ul>
+        <li><strong>GET /tasks</strong> – Retrieve all tasks</li>
+        <li><strong>POST /tasks</strong> – Create a new task</li>
+        <li><strong>GET /tasks/{id}</strong> – Retrieve a task by ID</li>
+        <li><strong>PUT /tasks/{id}</strong> – Update a task</li>
+        <li><strong>DELETE /tasks/{id}</strong> – Delete a task</li>
+      </ul>
+      <p>You can test these endpoints using tools like <strong>Postman</strong> or <code>curl</code>. Make sure your FlightPHP server is running and your MySQL database is connected properly.</p>
+    </div>
+    
 </body>
 </html>
